@@ -13,6 +13,7 @@ function start(){
     var elem = document.createElement('div');
     var heightClass = hRand > 0.85 ? 'h4' : hRand > 0.6 ? 'h3' : hRand > 0.35 ? 'h2' : '';
     elem.className = 'item ' + heightClass;
+
     $container.append( elem ).masonry( 'appended', elem );
   }
 

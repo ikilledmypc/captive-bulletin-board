@@ -7,20 +7,23 @@
 .note{
   width:100px;
   background-color: red;
-  margin:20px;
+  margin:10px;
 }
 
 .item {
-  width:  300px;
+  width:  60px;
   height: 60px;
   float: left;
-  margin: 20px;
   background: #D26;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
 
-.item.h2 { height: 300px; }
-.item.h3 { height: 330px; }
-.item.h4 { height: 380px; }
+.item.w2 { width:  120px; }
+.item.w3 { width:  180px; }
+.item.w4 { width:  240px; }
+
+.item.h2 { height: 100px; }
+.item.h3 { height: 130px; }
+.item.h4 { height: 180px; }
