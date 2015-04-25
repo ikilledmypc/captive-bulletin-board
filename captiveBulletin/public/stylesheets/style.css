@@ -1,0 +1,26 @@
+#board{
+  width: 100%;
+  background-color: blue;
+
+}
+
+.note{
+  width:100px;
+  background-color: red;
+  margin:20px;
+}
+
+.item {
+  width:  300px;
+  height: 60px;
+  float: left;
+  margin: 20px;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.item.h2 { height: 300px; }
+.item.h3 { height: 330px; }
+.item.h4 { height: 380px; }
