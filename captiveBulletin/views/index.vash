@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Welcome to bulletin board</h1>
+    <h1>Welcome to bulletin board test</h1>
 
     <div id="board">
     </div>
