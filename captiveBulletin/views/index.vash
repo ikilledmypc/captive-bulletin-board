@@ -20,14 +20,15 @@
   </head>
   <body>
     <h1>Welcome to bulletin board test</h1>
-
+    <h3 id="loadingPrompt"> loading posts... </h3>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-post">
+      Place new post
+    </button>
     <div id="board">
     </div>
 
 
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-post">
-      Place new post
-    </button>
+
     <div class="modal fade" id="new-post" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -42,7 +43,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button"  class="btn btn-primary">Save changes</button>
+            <button type="button" id="save-post-button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -50,7 +51,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="jquery/jquery-1.11.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="javascripts/board.js"> </script>

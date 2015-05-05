@@ -11,7 +11,18 @@ router.post('/', function(req, res, next) {
   var post = new Post(req.body);
   post.save(function (err) {
   if (err) // ...
-  console.log('meow');
+    console.log(err);
+  });
+  res.send('OK');
+});
+
+router.get("/",function(req,res,next){
+  return Post.find(function (err, posts) {
+    if (!err) {
+      return res.send(posts);
+    } else {
+      return console.log(err);
+    }
   });
 });
 
