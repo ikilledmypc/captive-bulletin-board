@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>bulletin board</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link href="jqueryte/jquery-te-1.4.0.css" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,11 +24,41 @@
     <div id="board">
     </div>
 
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-post">
+      Place new post
+    </button>
+    <div class="modal fade" id="new-post" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modal-title">New post</h4>
+          </div>
+          <div class="modal-body">
+              <input id="title" type="text" placeholder="title" name="title"/>
+              <textarea id="post-content" name="postContent" >
+              </textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button"  class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="javascripts/board.js"> </script>
+    <script src="javascripts/index.js" > </script>
+    <script src="jqueryte/jquery-te-1.4.0.min.js"></script>
     <script src="javascripts/masonry.pkgd.min.js" ></script>
+    <script>
+      $("#post-content").jqte();
+    </script>
   </body>
 </html>
