@@ -7,8 +7,9 @@ $(document).ready( function(){
       url: "/posts",
       data: data,
       dataType: "text/json"
+    }).complete(function(data){
+      $("#new-post").modal('hide');
     });
-
   });
 
 });

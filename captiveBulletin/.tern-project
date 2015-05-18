@@ -4,6 +4,7 @@
     "ecma5",
     "ecma6",
     "jquery"
+    "nodejs"
   ],
   "loadEagerly": [
     "js/**/*.js"
